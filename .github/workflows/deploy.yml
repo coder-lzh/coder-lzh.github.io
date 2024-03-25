@@ -20,7 +20,13 @@ jobs:
         run: yarn docs:build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        run: |
+          git init
+          git checkout -b gh-pages
+          git add -A
+          git -c user.name='coder-lzh' -c user.email='657083979@qq.com' commit -m '测试一下'
+          git remote add origin https://github.com/coder-lzh/vitepressDemo2.git
+          git push origin gh-pages -f -q
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/.vitepress/dist
