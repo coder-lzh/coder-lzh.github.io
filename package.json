@@ -9,7 +9,13 @@
     "docs:serve": "vitepress serve docs --port 8080"
   },
   "devDependencies": {
+    "sass": "^1.72.0",
     "vitepress": "^1.0.0-rc.31",
     "vue": "^3.3.9"
+  },
+  "dependencies": {
+    "element-plus": "^2.6.1",
+    "kitty-ui": "^4.19.2",
+    "slugify": "^1.6.6"
   }
 }
