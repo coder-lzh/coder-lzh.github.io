@@ -26,5 +26,5 @@ jobs:
           git checkout -b gh-pages
           git add -A
           git -c user.name='coder-lzh' -c user.email='657083979@qq.com' commit -m '测试一下'
-          git remote add origin https://github.com/coder-lzh/vitepressDemo2.git
+          git remote add origin git@github.com:coder-lzh/vitepressDemo2.git
           git push origin gh-pages -f -q
