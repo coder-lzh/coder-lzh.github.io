@@ -13,18 +13,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: yarn
+          # cache: yarn
       - run: yarn install --frozen-lockfile
 
       - name: Build
         run: yarn docs:build
 
       - name: Deploy
-        working-directory: docs/.vitepress/dist
-        run: |
-          git init
-          git checkout -b gh-pages
-          git add -A
-          git -c user.name='coder-lzh' -c user.email='657083979@qq.com' commit -m '测试一下'
-          git remote add origin git@github.com:coder-lzh/vitepressDemo2.git
-          git push origin gh-pages -f -q
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
