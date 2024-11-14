@@ -1,3 +1,0 @@
--- 查询指定文件夹下的文件
-
-find /www/java/  -name 'msg.html'

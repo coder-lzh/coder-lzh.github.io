@@ -1,4 +1,0 @@
-<insert id="insertUsers" keyProperty="id" useGeneratedKeys="true">
-        INSERT INTO user (username, password)
-        VALUES(#{username}, #{password})
-</insert>

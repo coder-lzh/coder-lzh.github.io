@@ -1,4 +1,0 @@
-<!--通过主键删除-->
-<delete id="deleteById" parameterType="java.lang.String">
-    delete from items where id = #{id}
-</delete>
