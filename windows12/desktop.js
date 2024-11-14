@@ -495,7 +495,8 @@ let nts = {
             此项目绝不附属于微软,且不应与微软操作系统或产品混淆,<br />
             这也不是 Windows365 cloud PC<br />
             本项目中微软、Windows和其他示范产品是微软公司的商标<br />
-            本项目中谷歌、Android和其他示范产品是谷歌公司的商标</p>`,
+            本项目中谷歌、Android和其他示范产品是谷歌公司的商标<br />
+            --- 博客：https://blog.share888.top/ </p>`,
         btn: [
             { type: 'main', text: '关闭', js: 'closenotice();' },
             { type: 'detail', text: '更多', js: "closenotice();openapp('about');if($('.window.about').hasClass('min'))minwin('about');$('.dock.about').removeClass('show')" },
